@@ -43,3 +43,11 @@ _Note :_ Můžeš re-buildnout veškeré kontejnery tímto příkazem:
 $ docker-compose build
 ```
 
+# Další užitečné příkazy:
+
+is docker running?
+````
+sudo chown $USER:docker /var/run/docker.sock
+````
+
+

@@ -23,6 +23,9 @@ nainstaluj proxy
 
 `docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro --restart=always jwilder/nginx-proxy`
 
+spustění proxy v konkétní síti, obecný příklad
+`docker run --name nginx-proxy --network nginx-proxy -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro jwilder/nginx-proxy`
+
 
 Nezapomeň přidat `mujprojekt.test` do `/etc/hosts` souboru. Ve Windows `C:\windows\system32\drivers\etc\hosts`.
 
